@@ -1,16 +1,3 @@
-# 用户名密码配置
-## 1. 基于配置文件application.yml的
-```yaml
-spring:
-    security:
-        user:
-            name: king
-            password: 123123
-            roles: admin
-```
-
-## 2. 访问权限
-```java
 package com.xrluo.springsecuritystudy.config;
 
 import org.springframework.context.annotation.Bean;
@@ -46,4 +33,3 @@ public class SecurityConfig {
     }
 
 }
-```
