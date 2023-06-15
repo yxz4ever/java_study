@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xrluo.springsecuritystudy.mapper.RolesMapper">
+
+    <resultMap id="BaseResultMap" type="com.xrluo.springsecuritystudy.domain.Roles">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="authIds" column="auth_ids" jdbcType="VARCHAR"/>
+            <result property="desc" column="desc" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="SMALLINT"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="INTEGER"/>
+            <result property="updateTime" column="update_time" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,auth_ids,
+        desc,sort,status,
+        create_time,update_time
+    </sql>
+</mapper>
